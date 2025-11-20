@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>table</title>
+</head>
+<body>
+  <h2>table</h2>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Horaire</th>
+    <th>Lundi</th>
+    <th>Mardi</th>
+    <th>Mercredi</th>
+    <th>Jeudi</th>
+    <th>Vendredi</th>
+  </tr>
+  <tr>
+    <td>8h - 10h</td>
+    <td class="math">Mathématiques</td>
+    <td class="phys">Physique</td>
+    <td class="proj" rowspan="2">Projet Web<br>(2h)</td>
+    <td class="eng">Anglais</td>
+    <td class="info">Informatique</td>
+  </tr>
+  <tr>
+    <td>10h - 12h</td>
+    <td class="fr">Français</td>
+    <td class="hist">Histoire</td>
+    <td class="math">Mathématiques</td>
+    <td class="phys">Physique</td>
+  </tr>
+  <tr>
+    <td>12h - 14h</td>
+    <td class="pause" colspan="5">PAUSE DÉJEUNER</td>
+  </tr>
+  <tr>
+    <td>14h - 16h</td>
+    <td class="info">Informatique</td>
+    <td class="tp" rowspan="2">TP Chimie<br>(2h)</td>
+    <td class="eng">Anglais</td>
+    <td class="fr">Français</td>
+    <td class="sport">Sport</td>
+  </tr>
+  <tr>
+    <td>16h - 18h</td>
+    <td class="geo">Géographie</td>
+    <td class="prog">Programmation</td>
+    <td class="atelier" colspan="2">Atelier Libre</td>
+  </tr>
+</table>
+<style>
+table {
+  width: 900px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 15px;
+}
+th {
+  background: #5c7be0;
+  color: white;
+  font-weight: bold;
+}
+td:first-child {
+  background: #eee;
+  font-weight: bold;
+}
+.math { background: #f8d2d8; }
+.phys { background: #cdd5ec; }
+.fr { background: #ebd2ea; }
+.hist { background: #ffd5b8; }
+.info { background: #c4e7e7; }
+.geo { background: #ffd4c8; }
+.eng { background: #d3e8cc; }
+.proj { background: #fff9c8; font-weight: bold; }
+.tp { background: #b8e4c4; font-weight: bold; }
+.prog { background: #c6eaea; }
+.sport { background: #ffd4b8; }
+.atelier { background: #c9a4e6; font-weight: bold; }
+.pause {
+  background: #d7cae9;
+  font-weight: bold;
+  font-size: 20px;
+}
+</style>
+</body>
+</html>
